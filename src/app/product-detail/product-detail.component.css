@@ -1,0 +1,12 @@
+.container {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/001/392/050/original/magic-pastel-bubbles-background-free-vector.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Esto centra verticalmente en la página */
+}
+
+.content {
+  text-align: center; /* Esto centra horizontalmente el contenido */
+}
