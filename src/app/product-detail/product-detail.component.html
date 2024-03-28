@@ -2,7 +2,7 @@
   <div class="content">
     <ng-container *ngIf="!loading">
       <div class="card" style="width: 25rem;">
-        <img [src]="product?.image" alt="{{ product?.title }}" style="max-width: 400px;" class="card-img-top" alt="...">
+        <img class="card-img-top" [src]="product?.image" alt="{{ product?.title }}" style="max-width: 400px;" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{ product?.title }}</h5>
           <h2 [ngStyle]="{'color': color}">Precio: {{ product?.price | currency }}</h2>

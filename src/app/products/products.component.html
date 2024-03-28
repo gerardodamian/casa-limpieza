@@ -1,10 +1,13 @@
 <div class="container">
-  <h1>Productos de Limpieza</h1>
-<table class="table">
+ 
+   <h1>Productos de Limpieza</h1>
+   <div class="table-responsive  ">
+   <div style="max-width: 100%; overflow: auto;">
+  <table class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Producto</th>
+      <th scope="col" class="d-none d-sm-table-cell">Producto</th>
       <th scope="col"></th>
       <th scope="col">Precio</th>
       <th scope="col">Detalle</th>
@@ -13,14 +16,14 @@
   <tbody>
     <tr *ngFor="let product of productList">
       <th scope="row">{{product.id}}</th>
-      <td>{{product.title}}</td>
-       <td><img [src]="product.image" alt="{{ product.title }}" style="max-width: 70px; max-height: 80px;"></td>
-      <td [ngClass]="{'red': product.price > 200}">{{product.price | currency}}</td>
+      <td class=" d-none d-sm-table-cell" >{{product.title}}</td>
+       <td class="col-4 col-md-3"><img [src]="product.image" alt="{{ product.title }}" style="max-width: 70px; max-height: 80px;"></td>
+      <td class="col-4 col-md-1"[ngClass]="{'red': product.price > 200}">{{product.price | currency}}</td>
       <td>
 
       <button
         type="button"
-        class="btn btn-outline-danger"
+        class="btn btn-outline-danger "
         [routerLink]="['/products', product.id]"
       >
         Detalle
@@ -29,6 +32,10 @@
    
   </tbody>
 </table>
+  
+  </div>
+
+ </div>
 
 </div>
  <footer>
