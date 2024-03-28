@@ -1,9 +1,11 @@
-<h1>Productos de Limpieza</h1>
+<div class="container">
+  <h1>Productos de Limpieza</h1>
 <table class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
       <th scope="col">Producto</th>
+      <th scope="col"></th>
       <th scope="col">Precio</th>
       <th scope="col">Detalle</th>
     </tr>
@@ -11,9 +13,9 @@
   <tbody>
     <tr *ngFor="let product of productList">
       <th scope="row">{{product.id}}</th>
-      <td>{{product.name}}</td>
-       <td><img [src]="product.img" alt="{{ product.name }}" style="max-width: 70px; max-height: 80px;"></td>
-      <td [ngClass]="{'red': product.price > 10}">{{product.price | currency}}</td>
+      <td>{{product.title}}</td>
+       <td><img [src]="product.image" alt="{{ product.title }}" style="max-width: 70px; max-height: 80px;"></td>
+      <td [ngClass]="{'red': product.price > 200}">{{product.price | currency}}</td>
       <td>
 
       <button
@@ -27,3 +29,35 @@
    
   </tbody>
 </table>
+
+</div>
+ <footer>
+    <div class="containerFooter">
+      <div class="card text-center">
+        <div class="card-header bg-success">Limpieza Burbujas 🫧</div>
+        <div class="card-body">
+          <h5 class="card-title">
+            Productos básicos de limpieza que no pueden faltar en tu casa
+          </h5>
+          <p class="card-text">
+            Antes de limpiar debes asegurarte de tener todo lo que necesitas a
+            mano para facilitarte la tarea. Conoce los productos básicos de
+            limpieza que necesitas para sacar mejores resultados.
+          </p>
+          <h5 class="card-title">Seguinos en nuestras redes</h5>
+          <div class="redes">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-messenger"></i>
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <a href="#" class="btn btn-success">Volver al Inicio</a>
+        </div>
+        <div class="card-footer bg-success">
+          <small
+            >&copy; 2023 <b>Limpiza Burbujas</b> - Todos los Derechos
+            Reservados</small
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
