@@ -1,12 +1,15 @@
 body{
-    padding: 150px;
+    padding-top: 100px;
+    
     background-image: url('https://th.bing.com/th/id/R.73b33b599100b011f76fa721d2274dd7?rik=dTBRigxQmgCnoQ&riu=http%3a%2f%2fimagenes.4ever.eu%2fdata%2fdownload%2fotros%2fburbujitas-258724.jpg%3fno-logo&ehk=kNGbjl5dXE3SB%2fEaSdiqenqiB%2fSv8eRF%2bdFgoGWo4xo%3d&risl=&pid=ImgRaw&r=0');
     background-size: cover;
 }
 .container{
-    background-color: antiquewhite;
+    padding-bottom: 100px;
+    background-color: rgb(166, 218, 196);
     margin-top: 100px;
     padding: 50px;
+    min-width: 400px;
 }
 h1{
     color: green;

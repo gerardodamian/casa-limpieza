@@ -1,0 +1,24 @@
+
+body{
+    background-image: url('https://img.freepik.com/fotos-premium/fondo-abstracto-gotas-agua_251792-2160.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+aside {
+  width: 400px; /* Ancho deseado del aside */
+  float: left; /* Para colocar el aside a la derecha */
+   /* Margen izquierdo para separarlo del contenido principal */
+}
+
+.containerAside {
+  padding: 20px;
+  background-color: #5da75a;
+  border: 1px solid #ccc;
+}
+aside {
+  flex: 0 0 200px; /* Establece el ancho fijo del aside */
+}
