@@ -38,3 +38,6 @@ aside {
 .redes i:last-child {
   margin-right: 0; /* Elimina el margen derecho del último icono */
 }
+.image{
+  width: 100%;
+}
