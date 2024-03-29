@@ -1,6 +1,6 @@
 
 body{
-    background-image: url('https://img.freepik.com/fotos-premium/fondo-abstracto-gotas-agua_251792-2160.jpg');
+    background-image: url('https://previews.123rf.com/images/malven/malven1411/malven141100023/33261835-la-textura-de-fondo-de-tela-sint%C3%A9tica-con-fibras-entrecruzadas-de-color-celeste.jpg');
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
   background-position: center;
 }
@@ -9,16 +9,32 @@ body{
     height: auto;
 }
 aside {
-  width: 400px; /* Ancho deseado del aside */
+  width: 300px; /* Ancho deseado del aside */
   float: left; /* Para colocar el aside a la derecha */
    /* Margen izquierdo para separarlo del contenido principal */
 }
 
 .containerAside {
   padding: 20px;
-  background-color: #5da75a;
+  background-color: #5a8ba7;
   border: 1px solid #ccc;
 }
 aside {
   flex: 0 0 200px; /* Establece el ancho fijo del aside */
+}
+.logo-img {
+    width: 50px;
+    height: auto; /* Esto mantendrá la proporción de la imagen */
+}
+.redes{
+    margin: 25px;
+}
+.redes i {
+  margin-right: 25px;
+  color: rgb(10, 95, 165);
+  font-size: 30px;
+}
+
+.redes i:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último icono */
 }

@@ -1,0 +1,4 @@
+.logo-img {
+    width: 50px;
+    height: auto; /* Esto mantendrá la proporción de la imagen */
+}

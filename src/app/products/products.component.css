@@ -1,3 +1,19 @@
 .red{
     color: red;
 }
+.logo-img {
+    width: 50px;
+    height: auto; /* Esto mantendrá la proporción de la imagen */
+}
+.redes{
+    margin: 25px;
+}
+.redes i {
+  margin-right: 25px;
+  color: rgb(19, 58, 131);
+  font-size: 30px;
+}
+
+.redes i:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último icono */
+}
